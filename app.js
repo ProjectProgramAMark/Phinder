@@ -1,4 +1,5 @@
 var express = require('express');
+require('dotenv').config();
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -8,9 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var regularpost = require('./routes/regularpost');
 var twitterpost = require('./routes/twitterpost');
-
-
-
+var watson = require('watson-developer-cloud');
 var app = express();
 
 // view engine setup

@@ -1,4 +1,7 @@
+
 applications:
+- services:
+  - personality-insights
 - path: .
   memory: 256M
   instances: 1
