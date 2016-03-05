@@ -1,0 +1,28 @@
+extends layout
+
+block content
+   .site-wrapper
+      .site-wrapper-inner
+        .cover-container
+          .masthead.clearfix
+            .inner
+              nav
+                ul.nav.masthead-nav
+                  li
+                    a(href='#') About
+          .inner.cover
+            h1.cover-heading.title-font PHINDER
+            p.lead
+            form(action="regularpost", method="post")
+              .form-group
+                textarea#comment.form-control(rows='5', name='you', placeholder='Talk about yourself...')
+                br
+                input.btn.btn-lg.btn-default(type='submit', name='regularsubmit')
+            p.lead
+            form(action="twitterpost", method="post")            
+              .form-group
+                input.form-control(type='text', name='twitter', placeholder='Place your Twitter name here')
+                br
+                input.btn.btn-lg.btn-default(type='submit', name='twittersubmit')
+
+append footer
