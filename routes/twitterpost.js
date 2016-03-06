@@ -40,7 +40,12 @@ client.get('statuses/user_timeline', options , function(err, data) {
     if (err)
       console.log(err);
     else
-      logic.logic(profile);
+      var result = logic.logic(profile);
+      // console.log(result);
+      // return result;
+      // res.render(results, {title: 'Results', philosopher: result.philosopher, trait: result.finalexpression});
+
+
       // var file = '/tmp/data.json';
       // var obj = profile;
       // //console.log(profile);
@@ -51,8 +56,8 @@ client.get('statuses/user_timeline', options , function(err, data) {
 });
 
   console.log(req.body.you);
-
-  res.render('index', { title: 'Phinder' });
+  // famous quote, book, image, description
+  res.render('results', { title: 'Results' });
 });
 
 module.exports = router;

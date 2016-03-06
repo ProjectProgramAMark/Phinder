@@ -8,6 +8,7 @@ var FinalExpression = "";
 var tr;
 var resultBigFive, resultValues;
 var resultBigFiveName, resultValuesName;
+var data = {};
 
 tr = input1.tree;
 child0 = tr.children[0].children[0];
@@ -29,6 +30,9 @@ function compareBigFive(input1){
   if(resultBigFive == child0.children[i].percentage)
   resultBigFiveName = child0.children[i].name;
   }
+
+  data.bigfive = resultBigFiveName;
+
   console.log(resultBigFive);
   console.log(resultBigFiveName);
   }
@@ -37,13 +41,15 @@ function compareBigFive(input1){
 
 
 
-    resultValues = Math.max(child2.children[0].percentage, /*child2.children[1].percentage, */child2.children[2].percentage,
+    resultValues = Math.max(child2.children[0].percentage, child2.children[2].percentage,
                       child2.children[3].percentage, child2.children[4].percentage);
 
     for(var i = 0; i < 5; i++){
     if(resultValues == child2.children[i].percentage)
     resultValuesName = child2.children[i].name;
     }
+
+    data.values = resultValuesName;
 
     console.log(resultValues);
     console.log(resultValuesName);
@@ -63,7 +69,7 @@ function compareBigFive(input1){
 
 
 var philosopher;
-var philosopher2;
+//var philosopher2;
 
 switch(resultNameFinal){
 
@@ -108,11 +114,15 @@ switch(resultNameFinal){
                         break;
 
 	default:
-			FinalExpression = "lolwut u dun goofed ma frend";
+			FinalExpression = "Philosopher NOT dank enough";
 }
 
 console.log(FinalExpression);
 console.log(philosopher);
-console.log(philosopher2);
+
+data.philosopher = philosopher;
+data.finalexpression = FinalExpression;
+return data;
+//console.log(philosopher2);
 }
 };
