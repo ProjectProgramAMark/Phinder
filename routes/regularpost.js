@@ -21,7 +21,7 @@ router.post('/', function(req, res, next) {
       console.log(err);
     else
       logic.logic(profile);
-      res.render(results);
+      res.render('results', { title: 'Results', result: result });
       //console.log(profile);
   });
   res.render('index', { title: 'Phinder' });

@@ -39,25 +39,25 @@ client.get('statuses/user_timeline', options , function(err, data) {
   function (err, profile) {
     if (err)
       console.log(err);
-    else
+    else {
       var result = logic.logic(profile);
-      // console.log(result);
-      // return result;
-      // res.render(results, {title: 'Results', philosopher: result.philosopher, trait: result.finalexpression});
+      console.log(result);
+      res.render('results', { title: 'Results', result: result });
+    }
 
 
-      // var file = '/tmp/data.json';
-      // var obj = profile;
-      // //console.log(profile);
-      // jsonfile.writeFile(file, obj, function (err) {
-      //   console.error(err);
-      // });
+      var file = '/tmp/data.json';
+      var obj = profile;
+      //console.log(profile);
+      jsonfile.writeFile(file, obj, function (err) {
+        console.error(err);
+      });
   });
 });
 
   console.log(req.body.you);
   // famous quote, book, image, description
-  res.render('results', { title: 'Results' });
+  // res.render('results', { title: 'Results' });
 });
 
 module.exports = router;
