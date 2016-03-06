@@ -37,9 +37,10 @@ client.get('statuses/user_timeline', options , function(err, data) {
   // console.log(req.body.you);
   personality_insights.profile({ text: tweets },
   function (err, profile) {
-    if (err)
+    if (err) {
       console.log(err);
-    else {
+      res.render('twitternotfound');
+    } else {
       var result = logic.logic(profile);
       console.log(result);
       res.render('results', { title: 'Results', result: result });
