@@ -1,5 +1,6 @@
 var express = require('express');
 var watson = require('watson-developer-cloud');
+var logic = require('../public/javascripts/Logic');
 var router = express.Router();
 
 /* POST personality stuff. */
@@ -19,7 +20,8 @@ router.post('/', function(req, res, next) {
     if (err)
       console.log(err);
     else
-      console.log(profile);
+      logic.logic(profile);
+      //console.log(profile);
   });
   res.render('index', { title: 'Phinder' });
 });

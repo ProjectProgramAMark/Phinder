@@ -3,6 +3,7 @@ var router = express.Router();
 var Twitter = require('twitter');
 var watson = require('watson-developer-cloud');
 var jsonfile = require('jsonfile');
+var logic = require('../public/javascripts/Logic');
 
 /* POST personality stuff from Twitter feed. */
 router.post('/', function(req, res, next) {
@@ -18,6 +19,10 @@ var options = { screen_name: req.body.twitter };
 
 client.get('statuses/user_timeline', options , function(err, data) {
   var tweetsArray = [];
+  // if(err) {
+  //   res.render(index);
+  //   req.assert()
+  // }
   for (var i = 0; i < data.length ; i++) {
     console.log(data[i].text);
     tweetsArray.push(data[i].text);
@@ -35,12 +40,13 @@ client.get('statuses/user_timeline', options , function(err, data) {
     if (err)
       console.log(err);
     else
-      var file = '/tmp/data.json';
-      var obj = profile;
-      //console.log(profile);
-      jsonfile.writeFile(file, obj, function (err) {
-        console.error(err);
-      });
+      logic.logic(profile);
+      // var file = '/tmp/data.json';
+      // var obj = profile;
+      // //console.log(profile);
+      // jsonfile.writeFile(file, obj, function (err) {
+      //   console.error(err);
+      // });
   });
 });
 
