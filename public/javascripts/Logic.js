@@ -166,7 +166,7 @@ switch(resultNameFinal){
                         book = "Outsider in the White House";
                         desc = "Bernie Sanders is a candidate for the Democratic nomination for President of the United States in the 2016 election. A Democrat as of 2015, Sanders had been the longest-serving independent in U.S. congressional history, though his caucusing with the Democrats entitled him to committee assignments and at times gave Democrats a majority.";
                         wikiLink = "https://en.wikipedia.org/wiki/Bernie_Sanders";
-                        imgLink = "i.imgur.com/U9jykKi.jpg";
+                        imgLink = "http://i.imgur.com/U9jykKi.jpg";
                         break;
   case("Self-transcendence"):
       FinalExpression = "Self-transcendence is the overcoming of limits.";
