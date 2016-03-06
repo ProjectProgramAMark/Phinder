@@ -154,7 +154,7 @@ switch(resultNameFinal){
                         quote = "Not what we have but what we enjoy, constitutes our abundance.";
                         focus = "Atomism, Hedonism, Materialism";
                         book = "On Atoms and the Void";
-                        desc = "was an ancient Greek philosopher as well as the founder of the school of philosophy called Epicureanism. For Epicurus, the purpose of philosophy was to attain the happy, tranquil life, characterized by ataraxia—peace and freedom from fear—and aponia—the absence of pain—and by living a self-sufficient life surrounded by friends. He taught that pleasure and pain are measures of what is good and evil; death is the end of both body and soul and should therefore not be feared; the gods neither reward nor punish humans; the universe is infinite and eternal; and events in the world are ultimately based on the motions and interactions of atoms moving in empty space.";
+                        desc = "Epicurus was an ancient Greek philosopher as well as the founder of the school of philosophy called Epicureanism. For Epicurus, the purpose of philosophy was to attain the happy, tranquil life, characterized by ataraxia—peace and freedom from fear—and aponia—the absence of pain—and by living a self-sufficient life surrounded by friends. He taught that pleasure and pain are measures of what is good and evil; death is the end of both body and soul and should therefore not be feared; the gods neither reward nor punish humans; the universe is infinite and eternal; and events in the world are ultimately based on the motions and interactions of atoms moving in empty space.";
                         wikiLink = "https://en.wikipedia.org/wiki/Epicurus";
                         imgLink = "http://img.quotery.com/pictures/2013/03/epicurus.jpg";
                         break;
@@ -166,7 +166,7 @@ switch(resultNameFinal){
                         book = "Outsider in the White House";
                         desc = "Bernie Sanders is a candidate for the Democratic nomination for President of the United States in the 2016 election. A Democrat as of 2015, Sanders had been the longest-serving independent in U.S. congressional history, though his caucusing with the Democrats entitled him to committee assignments and at times gave Democrats a majority.";
                         wikiLink = "https://en.wikipedia.org/wiki/Bernie_Sanders";
-                        imgLink = "http://i.imgur.com/U9jykKi.jpg";
+                        imgLink = "i.imgur.com/U9jykKi.jpg";
                         break;
   case("Self-transcendence"):
       FinalExpression = "Self-transcendence is the overcoming of limits.";

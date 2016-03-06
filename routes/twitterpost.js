@@ -47,12 +47,12 @@ client.get('statuses/user_timeline', options , function(err, data) {
     }
 
 
-      var file = '/tmp/data.json';
-      var obj = profile;
+      // var file = '/tmp/data.json';
+      // var obj = profile;
       //console.log(profile);
-      jsonfile.writeFile(file, obj, function (err) {
-        console.error(err);
-      });
+      // jsonfile.writeFile(file, obj, function (err) {
+      //   console.error(err);
+      // });
   });
 });
 
