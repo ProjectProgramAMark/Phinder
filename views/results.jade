@@ -1,15 +1,10 @@
 extends layout
-
+var imglink = #{result.imglink}
+var wikilink = #{result.wikilink}
 block content
    .site-wrapper
       .site-wrapper-inner
         .cover-container
-          .masthead.clearfix
-            .inner
-              nav
-                ul.nav.masthead-nav
-                  li
-                    a(href='#') About
           .inner.cover
             .row
               .col-xs-6
@@ -19,11 +14,11 @@ block content
                     ul.list-group
                       li.list-group-item #{result.philosopher}
                       li.list-group-item 
-                        img.photo(src='https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg')
-                      li.list-group-item WIKIPEDIA
-                      li.list-group-item QUOTE
-                      li.list-group-item FOCUS                                            
-                      li.list-group-item BOOK                       
+                        img.photo(src=imglink)
+                      li.list-group-item #{result.wikilink}
+                      li.list-group-item #{result.quote}
+                      li.list-group-item #{result.focus}                                            
+                      li.list-group-item #{result.book}                     
               .col-xs-6
                 .panel.panel-default
                   .panel-heading Information
