@@ -5,29 +5,26 @@ block content
    .site-wrapper
       .site-wrapper-inner
         .cover-container
-          .inner.cover
+          .col-lg-12
             .row
-              .col-xs-6
-                .panel.panel-default
-                  .panel-heading Philosopher
-                  .panel-body
-                    ul.list-group
-                      li.list-group-item #{result.philosopher}
-                      li.list-group-item 
-                        img.photo(src=imglink)
-                      li.list-group-item #{result.wikilink}
-                      li.list-group-item #{result.quote}
-                      li.list-group-item #{result.focus}                                            
-                      li.list-group-item #{result.book}                     
-              .col-xs-6
-                .panel.panel-default
-                  .panel-heading Information
-                  .panel-body
-                    ul.list-group
-                      li.list-group-item #{result.finalexpression}
-                      li.list-group-item #{result.desc}
-                                         
-
-
+              table.table.table-hover.table-bordered
+                thead
+                  tr
+                    th Philosopher
+                    th Information
+                tbody
+                  tr
+                    td #{result.philosopher}
+                    td #{result.finalexpression}
+                  tr
+                    td
+                      img.photo(src='#{result.imglink}')
+                    td #{result.desc}
+                  tr
+                    td #{result.quote}
+                    td #{result.wikilink}
+                  tr
+                    td #{result.focus}
+                    td #{result.book}
 
 append footer

@@ -24,7 +24,7 @@ router.post('/', function(req, res, next) {
       res.render('results', { title: 'Results', result: result });
       //console.log(profile);
   });
-  res.render('index', { title: 'Phinder' });
+  res.render('results', { title: 'Phinder' });
 });
 
 module.exports = router;

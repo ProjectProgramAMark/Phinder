@@ -175,8 +175,18 @@ switch(resultNameFinal){
                         focus = "Epistemology, Ethics, Metaphysics";
                         book = "Critique of Pure Reason";
                         desc = "Immanuel Kant was a German philosopher who is considered the central figure of modern philosophy. Kant argued that fundamental concepts of the human mind structure human experience, that reason is the source of morality, that aesthetics arises from a faculty of disinterested judgment, that space and time are forms of our sensibility, and that the world as it is in-itself is unknowable.";
-                        wikiLink = "https://en.wikipedia.org/wiki/Søren_Kierkegaard";
+                        wikiLink = "https://en.wikipedia.org/wiki/Immanuel_Kant";
                         imgLink = "https://upload.wikimedia.org/wikipedia/commons/8/89/Kierkegaard.jpg";
+                        break;
+  case("Emotional range"):
+      FinalExpression = "Emotional range is the ability to understand, use, and analyze emotions in yourself and others.";
+                        philosopher = "Confucius";
+                        quote = "Our greatest glory is not in never falling, but in rising every time we fall.";
+                        focus = "Morality";
+                        book = "The Ethics of Confucius";
+                        desc = "Confucius (551/552-479 BC) was a Chinese teacher, philosopher and politician during the so-called Hundred Schools of Thought era. He was the founder of Confucianism, ethical and philosophical system that still has many followers in China. The philosopher is thought to write or edit many Chinese classic texts but modern scholars have expressed doubt that he is really the author/editor of all the works that are traditionally attributed to him. But there is no doubt that Confucius’ philosophical system dominated the Chinese thought for many centuries.";
+                        wikiLink = "https://en.wikipedia.org/wiki/Confucius";
+                        imgLink = "https://upload.wikimedia.org/wikipedia/commons/5/54/Confucius_Tang_Dynasty.jpg";
                         break;
 
 	default:
