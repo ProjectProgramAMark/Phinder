@@ -37,6 +37,7 @@ function compareBigFive(input1){
   console.log(resultBigFiveName);
   }
 
+//function used to compare trait values to figure out which is the strongest
   function compareValues(input1){
 
 
@@ -59,6 +60,7 @@ function compareBigFive(input1){
     compareBigFive(input1);
     compareValues(input1);
 
+//Choose largest traight value
   var resultNameFinal;
   var resultNumFinal = Math.max(resultBigFive, resultValues);
 
@@ -76,6 +78,7 @@ var desc;
 var wikiLink;
 var imgLink;
 
+//Switch case for output
 switch(resultNameFinal){
 
 	case ("Openness"):
@@ -196,6 +199,7 @@ switch(resultNameFinal){
 console.log(FinalExpression);
 console.log(philosopher);
 
+//Node stuffs
 data.finalexpression = FinalExpression;
 data.philosopher = philosopher;
 data.quote = quote;
