@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET meet page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Phinder: the Philosophy Matcher' });
+  res.render('meet');
 });
 
 module.exports = router;

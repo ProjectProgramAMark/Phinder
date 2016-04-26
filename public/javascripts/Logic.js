@@ -199,7 +199,7 @@ switch(resultNameFinal){
 console.log(FinalExpression);
 console.log(philosopher);
 
-//Node stuffs
+//Nodejs data binding
 data.finalexpression = FinalExpression;
 data.philosopher = philosopher;
 data.quote = quote;

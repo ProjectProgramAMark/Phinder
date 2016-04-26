@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var regularpost = require('./routes/regularpost');
 var twitterpost = require('./routes/twitterpost');
+var meet = require('./routes/meet');
 var watson = require('watson-developer-cloud');
 var app = express();
 
@@ -28,10 +29,11 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/regularpost', regularpost);
 app.use('/twitterpost', twitterpost);
+app.use('/meet', meet);
 
 
 app.listen(6001, function() {
-  console.log("Listening on 6001!");
+  console.log("Listening on 6001...");
 });
 
 // catch 404 and forward to error handler
