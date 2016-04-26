@@ -24,12 +24,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/public', express.static(__dirname + "/public"));
 
 app.use('/', routes);
 app.use('/users', users);
 app.use('/regularpost', regularpost);
 app.use('/twitterpost', twitterpost);
 app.use('/meet', meet);
+
 
 
 app.listen(6001, function() {
