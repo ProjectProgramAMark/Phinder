@@ -14,9 +14,9 @@ var client = new Twitter({
   access_token_secret: process.env.ACCESS_TOKEN_SECRET
 });
 
-
+console.log(JSON.stringify(client));
 var options = { screen_name: req.body.twitter };
-
+console.log(JSON.stringify(options));
 client.get('statuses/user_timeline', options , function(err, data) {
   var tweetsArray = [];
   // if(err) {
@@ -28,6 +28,7 @@ client.get('statuses/user_timeline', options , function(err, data) {
     tweetsArray.push(data[i].text);
   }
   var tweets = tweetsArray.toString();
+  console.log(JSON.stringify(tweets));
   var personality_insights = watson.personality_insights({
     username: "d13898db-a97e-4093-a466-c99b9e2fe56c",
     password: "QoRtdggvoTjK",

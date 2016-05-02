@@ -7,7 +7,7 @@ html
     // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
     meta(name='description', content='')
     meta(name='author', content='')
-    title Phinder
+    title Phinder: the Philosophy Matchmaker
     // Bootstrap core CSS
     link(href='stylesheets/bootstrap.css', rel='stylesheet')
     link(href='stylesheets/cover.css', rel='stylesheet')
@@ -25,10 +25,13 @@ html
       }
 
   body
-    a(href="/")
-      .cover.lefting Home
+    div.parent
+      div.wide.col-md-6
+        a(href="/")
+          .cover-container Home
+      div.narrow.col-md-6
         a(href="meet")
-          .cover Meet the makers
+          .cover-container Creators
 
 
     block content
